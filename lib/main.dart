@@ -59,6 +59,25 @@ class _ApplicationState extends State<Application> {
             child: Stack(
               alignment: Alignment.topCenter,
               children: [
+                Container(
+                  // padding: EdgeInsets.all(12),
+                  alignment: Alignment.topRight,
+                  child: TextButton(
+                    onPressed: () {
+                      setState(() {
+                        _scoreOne = 0;
+                        _scoreTwo = 0;
+                      });
+                    },
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black,
+                    ),
+                    child: Icon(
+                      Icons.restart_alt,
+                      size: 26,
+                    ),
+                  ),
+                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
