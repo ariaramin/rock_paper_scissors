@@ -62,19 +62,20 @@ class _ApplicationState extends State<Application> {
                 Container(
                   // padding: EdgeInsets.all(12),
                   alignment: Alignment.topRight,
-                  child: TextButton(
-                    onPressed: () {
-                      setState(() {
-                        _scoreOne = 0;
-                        _scoreTwo = 0;
-                      });
-                    },
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.black,
-                    ),
-                    child: Icon(
-                      Icons.restart_alt,
-                      size: 26,
+                  child: Padding(
+                    padding: EdgeInsets.all(14),
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          _scoreOne = 0;
+                          _scoreTwo = 0;
+                        });
+                      },
+                      child: Icon(
+                        Icons.restart_alt,
+                        size: 28,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
