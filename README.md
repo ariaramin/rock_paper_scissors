@@ -1,6 +1,6 @@
 # rock_paper_scissors
 
-A new Flutter project.
+![image](preview/rock_paper_scissors.png)
 
 ## Getting Started
 
